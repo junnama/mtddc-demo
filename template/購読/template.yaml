@@ -1,0 +1,22 @@
+--- 
+blog_id: 1
+build_dynamic: 0
+build_interval: 0
+build_type: 1
+created_by: 1
+created_on: '20151125203417'
+current_revision: 0
+gittree_id: 11
+id: 10
+identifier: syndication
+linked_file: ~
+linked_file_mtime: ~
+linked_file_size: ~
+meta: ~
+modified_by: ~
+modified_on: '20151125203417'
+name: 購読
+outfile: ~
+rebuild_me: 1
+text: "<div class=\"widget-syndication widget section\">\n    <p><img src=\"<$mt:StaticWebPath$>images/status_icons/feed.gif\" alt=\"購読する\" width=\"9\" height=\"9\" /> <a href=\"<$mt:Link template=\"feed_recent\"$>\">このブログを購読</a></p>\n<mt:If name=\"search_results\">\n    <mt:If tag=\"SearchString\">\n    <p><img src=\"<$mt:StaticWebPath$>images/status_icons/feed.gif\" alt=\"購読する\" width=\"9\" height=\"9\" /> <a href=\"<$mt:CGIPath$><$mt:SearchScript$>?<mt:IfTagSearch>tag<mt:else>search</mt:IfTagSearch>=<$mt:SearchString encode_url=\"1\"$>&amp;Template=feed&amp;IncludeBlogs=<$mt:SearchIncludeBlogs$>&amp;limit=<$mt:SearchMaxResults$>\" title=\"<mt:IfTagSearch>「<$mt:SearchString$>」の検索結果を購読<mt:Else>タグ「<$mt:SearchString$>」を購読</mt:IfTagSearch>\"><mt:IfTagSearch>タグ「<$mt:SearchString$>」のフィード<mt:Else>「<$mt:SearchString$>」を検索した結果のフィード</mt:IfTagSearch></a></p>\n    </mt:If>\n</mt:If>\n</div>\n"
+type: widget

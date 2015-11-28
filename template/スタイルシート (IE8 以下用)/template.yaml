@@ -1,0 +1,22 @@
+--- 
+blog_id: 1
+build_dynamic: 0
+build_interval: 0
+build_type: 1
+created_by: 1
+created_on: '20151125203418'
+current_revision: 0
+gittree_id: 26
+id: 25
+identifier: styles_ie
+linked_file: ~
+linked_file_mtime: ~
+linked_file_size: ~
+meta: ~
+modified_by: ~
+modified_on: '20151125203418'
+name: スタイルシート (IE8 以下用)
+outfile: styles_ie.css
+rebuild_me: 1
+text: "@import url(<$mt:SupportDirectoryURL$>theme_static/eiger/css/ie.css);\n\n"
+type: index

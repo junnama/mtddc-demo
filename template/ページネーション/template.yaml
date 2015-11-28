@@ -1,0 +1,22 @@
+--- 
+blog_id: 1
+build_dynamic: 0
+build_interval: 0
+build_type: 1
+created_by: 1
+created_on: '20151125203418'
+current_revision: 0
+gittree_id: 24
+id: 23
+identifier: pagination
+linked_file: ~
+linked_file_mtime: ~
+linked_file_size: ~
+meta: ~
+modified_by: ~
+modified_on: '20151125203418'
+name: ページネーション
+outfile: ~
+rebuild_me: 1
+text: "<mt:SetVarBlock name=\"pagination_navigation\">\n  <mt:If name=\"search_results\">\n    <mt:IfMoreResults>\n<li><a rel=\"prev\" href=\"<$mt:NextLink encode_html=\"1\"$>\">過去の記事</a></li>\n    </mt:IfMoreResults>\n    <mt:IfPreviousResults>\n<li><a rel=\"next\" href=\"<$mt:PreviousLink encode_html=\"1\"$>\">新しい記事</a></li>\n    </mt:IfPreviousResults>\n  <mt:Else>\n    <mt:If name=\"archive_template\">\n      <$mt:ArchiveCount setvar=\"total_entries\"$>\n    <mt:Else>\n      <$mt:BlogEntryCount setvar=\"total_entries\"$>\n    </mt:If>\n    <mt:If name=\"total_entries\" gt=\"$entries_per_page\">\n<li><a rel=\"prev\" href=\"<$mt:Var name=\"search_link\"$>2\">過去の記事</a></li>\n    </mt:If>\n  </mt:If>\n</mt:SetVarBlock>\n\n<mt:If name=\"pagination_navigation\">\n<$mt:Var name=\"pagination_navigation\" strip_linefeeds=\"1\" trim=\"1\" setvar=\"pagination_navigation\"$>\n<nav class=\"pagination\">\n  <ul>\n<$mt:Var name=\"pagination_navigation\"$>\n  </ul>\n</nav>\n</mt:If>\n"
+type: custom

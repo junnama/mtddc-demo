@@ -1,0 +1,22 @@
+--- 
+blog_id: 1
+build_dynamic: 0
+build_interval: 0
+build_type: 1
+created_by: 1
+created_on: '20151125203418'
+current_revision: 0
+gittree_id: 33
+id: 32
+identifier: search
+linked_file: ~
+linked_file_mtime: ~
+linked_file_size: ~
+meta: ~
+modified_by: ~
+modified_on: '20151125203418'
+name: 検索
+outfile: ~
+rebuild_me: 1
+text: "<nav class=\"widget-search widget\">\n  <form method=\"get\" id=\"search\" action=\"<$mt:CGIPath$><$mt:SearchScript$>\">\n    <div>\n      <input type=\"text\" name=\"search\" value=\"<MTIfStatic><mt:IfStraightSearch><$mt:SearchString escape=\"html\"$></mt:IfStraightSearch></MTIfStatic>\" placeholder=\"検索...\">\n<mt:If name=\"search_results\">\n      <input type=\"hidden\" name=\"IncludeBlogs\" value=\"<$mt:SearchIncludeBlogs$>\">\n<mt:Else>\n      <input type=\"hidden\" name=\"IncludeBlogs\" value=\"<$mt:BlogID$>\">\n</mt:If>\n      <input type=\"hidden\" name=\"limit\" value=\"<$mt:SearchMaxResults$>\">\n      <button type=\"submit\" name=\"button\">\n        <img alt=\"検索\" src=\"<$mt:SupportDirectoryURL encode_html=\"1\"$>theme_static/eiger/images/search-icon.png\">\n      </button>\n    </div>\n  </form>\n</nav>\n"
+type: widget

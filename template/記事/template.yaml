@@ -1,0 +1,32 @@
+--- 
+blog_id: 1
+build_dynamic: 0
+build_interval: 0
+build_type: 1
+created_by: 1
+created_on: '20151125203417'
+current_revision: 0
+gittree_id: 8
+id: 7
+identifier: entry
+linked_file: ~
+linked_file_mtime: ~
+linked_file_size: ~
+meta: ~
+modified_by: ~
+modified_on: '20151125203417'
+name: 記事
+outfile: ~
+rebuild_me: 1
+template_map: 
+  - 
+    archive_type: Individual
+    blog_id: 1
+    build_interval: ~
+    build_type: 1
+    file_template: blog/%y/%m/%-f
+    id: 1
+    is_preferred: 1
+    template_id: 7
+text: "<!DOCTYPE html>\n<html lang=\"<$mt:BlogLanguage$>\" itemscope itemtype=\"http://schema.org/Article\">\n  <head>\n    <meta charset=\"<$mt:PublishCharset$>\">\n    <meta name=\"description\" content=\"<$mt:EntryExcerpt remove_html=\"1\" encode_html=\"1\"$>\">\n    <meta name=\"generator\" content=\"<$mt:ProductName version=\"1\"$>\">\n    <title><$mt:EntryTitle encode_html=\"1\"$> - <$mt:BlogName encode_html=\"1\"$></title>\n    <$mt:Include module=\"HTMLヘッダー\"$>\n    <mt:EntryPrevious><link rel=\"prev\" href=\"<$mt:EntryPermalink encode_html=\"1\"$>\" title=\"<$mt:EntryTitle encode_html=\"1\"$>\"></mt:EntryPrevious>\n    <mt:EntryNext><link rel=\"next\" href=\"<$mt:EntryPermalink encode_html=\"1\"$>\" title=\"<$mt:EntryTitle encode_html=\"1\"$>\"></mt:EntryNext>\n    <!-- Open Graph Protocol -->\n    <meta property=\"og:type\" content=\"article\">\n    <meta property=\"og:locale\" content=\"<$mt:BlogLanguage setvar=\"blog_lang\"$><mt:If name=\"blog_lang\" eq=\"ja\">ja_JP<mt:else><$mt:Var name=\"blog_lang\"$></mt:If>\">\n    <meta property=\"og:title\" content=\"<$mt:EntryTitle encode_html=\"1\"$>\">\n    <meta property=\"og:url\" content=\"<$mt:EntryPermalink encode_html=\"1\"$>\">\n    <meta property=\"og:description\" content=\"<$mt:EntryExcerpt remove_html=\"1\" encode_html=\"1\"$>\">\n    <meta property=\"og:site_name\" content=\"<$mt:BlogName encode_html=\"1\"$>\">\n    <meta property=\"og:image\" content=\"<mt:EntryAssets type=\"image\" limit=\"1\"><$mt:AssetThumbnailURL height=\"320\" square=\"1\" encode_html=\"1\"$><mt:Else><mt:Assets type=\"image\" tag=\"@SITE_ICON\" limit=\"1\"><$mt:AssetThumbnailURL height=\"320\" square=\"1\" encode_html=\"1\"$><mt:Else><$mt:SupportDirectoryURL with_domain=\"1\" encode_html=\"1\"$>theme_static/eiger/images/siteicon-sample.png</mt:Assets></mt:EntryAssets>\">\n    <!-- Metadata -->\n    <meta itemprop=\"description\" content=\"<$mt:EntryExcerpt remove_html=\"1\" encode_html=\"1\"$>\">\n    <link itemprop=\"url\" href=\"<$mt:EntryPermalink encode_html=\"1\"$>\">\n    <link itemprop=\"image\" href=\"<mt:EntryAssets type=\"image\" limit=\"1\"><$mt:AssetThumbnailURL height=\"320\" square=\"1\" encode_html=\"1\"$><mt:Else><mt:Assets type=\"image\" tag=\"@SITE_ICON\" limit=\"1\"><$mt:AssetThumbnailURL height=\"320\" square=\"1\" encode_html=\"1\"$><mt:Else><$mt:SupportDirectoryURL with_domain=\"1\" encode_html=\"1\"$>theme_static/eiger/images/siteicon-sample.png</mt:Assets></mt:EntryAssets>\">\n    <mt:IfCommentsActive><script src=\"<$mt:Link template=\"javascript\"$>\"></script></mt:IfCommentsActive>\n  </head>\n  <body>\n    <header role=\"banner\">\n      <$mt:Include module=\"バナーヘッダー\"$>\n      <$mt:Include module=\"ナビゲーション\"$>\n    </header>\n    <div class=\"content\">\n      <ul class=\"breadcrumb\">\n        <li><a href=\"<$mt:BlogURL encode_html=\"1\"$>\">ホーム</a></li>\n        <li><a href=\"<$mt:Link template=\"main_index\" encode_html=\"1\"$>\">ブログ</a></li>\n        <li><$mt:EntryTitle$></li>\n      </ul>\n      <div role=\"main\">\n        <article id=\"entry-<$mt:EntryID$>\" class=\"entry\">\n          <h2 itemprop=\"name\" class=\"title\"><$mt:EntryTitle$></h2>\n          <footer>\n            <p>投稿日: <time datetime=\"<$mt:EntryDate format_name=\"iso8601\"$>\" itemprop=\"datePublished\"><$mt:EntryDate format=\"%x\"$></time><mt:IfArchiveTypeEnabled archive_type=\"Category\"><mt:If tag=\"EntryPrimaryCategory\"> <mt:EntryPrimaryCategory><a href=\"<$mt:CategoryArchiveLink$>\" rel=\"tag\" class=\"label category <$mt:CategoryBasename$>\"><$mt:CategoryLabel$></a></mt:EntryPrimaryCategory></mt:If></mt:IfArchiveTypeEnabled></p>\n          </footer>\n          <div class=\"entry-content\" itemprop=\"articleBody\">\n            <$mt:EntryBody$>\n            <$mt:EntryMore$>\n          </div>\n\n          <nav class=\"pagination\">\n            <ul>\n<mt:EntryPrevious>\n              <li><a rel=\"prev\" href=\"<$mt:EntryPermalink encode_html=\"1\"$>\" title=\"<$mt:EntryTitle encode_html=\"1\"$>\">前の記事</a></li>\n</mt:EntryPrevious>\n<mt:EntryNext>\n              <li><a rel=\"next\" href=\"<$mt:EntryPermalink$>\" title=\"<$mt:EntryTitle encode_html=\"1\"$>\">次の記事</a></li>\n</mt:EntryNext>\n          </ul>\n        </nav>\n          <$mt:Include module=\"Zenback\"$>\n          <$mt:Include module=\"コメント\"$>\n          <$mt:Include module=\"トラックバック\"$>\n        </article>\n      </div>\n      <div class=\"related\">\n        <$mt:WidgetSet name=\"関連コンテンツ (ブログ)\"$>\n      </div>\n    </div>\n    <footer role=\"contentinfo\">\n      <$mt:Include module=\"バナーフッター\"$>\n    </footer>\n    <script src=\"<$mt:StaticWebPath encode_html=\"1\"$>jquery/jquery.min.js\"></script>\n    <script src=\"<$mt:Link template=\"javascript_theme\" encode_html=\"1\">\"></script>\n  </body>\n</html>\n"
+type: individual

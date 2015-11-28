@@ -1,0 +1,22 @@
+--- 
+blog_id: 1
+build_dynamic: 0
+build_interval: 0
+build_type: 1
+created_by: 1
+created_on: '20151125203418'
+current_revision: 0
+gittree_id: 25
+id: 24
+identifier: pages_list
+linked_file: ~
+linked_file_mtime: ~
+linked_file_size: ~
+meta: ~
+modified_by: ~
+modified_on: '20151125203418'
+name: ページ一覧
+outfile: ~
+rebuild_me: 1
+text: "<mt:IfArchiveTypeEnabled archive_type=\"Page\">\n  <mt:If tag=\"BlogEntryCount\">\n    <mt:Pages sort_by=\"title\" sort_order=\"ascend\">\n      <mt:PagesHeader>\n<nav class=\"widget-pages widget\">\n  <h3>ウェブページ</h3>\n  <ul>\n      </mt:PagesHeader>\n    <li><a href=\"<$mt:PagePermalink encode_html=\"1\"$>\"><$mt:PageTitle$></a></li>\n      <mt:PagesFooter>\n  </ul>\n</nav>\n      </mt:PagesFooter>\n    </mt:Pages>\n  </mt:If>\n</mt:IfArchiveTypeEnabled>\n"
+type: widget
